@@ -27,9 +27,13 @@ public class MainApp {
       Car car4 = new Car("Nissan GTR", 2016);
 
       userService.add(user1.setCar(car1).setUser(user1));
+      userService.add(car1);
       userService.add(user2.setCar(car2).setUser(user2));
+      userService.add(car2);
       userService.add(user3.setCar(car3).setUser(user3));
+      userService.add(car3);
       userService.add(user4.setCar(car4).setUser(user4));
+      userService.add(car4);
 
       List<User> users = userService.listUsers();
       for (User user : users) {
